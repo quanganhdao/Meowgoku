@@ -8,10 +8,21 @@ public class Cell : MonoBehaviour
     [SerializeField] private bool _isSpecial;
     [SerializeField] private TextMeshProUGUI Icon;
     [SerializeField] private float _delaySecondForNextTap;
+    [SerializeField] private int _correctScoreGet = 20;
     private bool _isClicked = false;
+    private bool _isShowed = false;
+
+    public void HandleTap()
+    {
+        OnSpecialTap();
+    }
     public async UniTask OnSpecialTap()
     {
-        Icon.text = "X";
+        if(Icon.text.Length>=1)
+            Icon.text ="";
+        else 
+            Icon.text = "X";
+
         if(_isClicked)
         {
             _isClicked = false;
@@ -20,17 +31,27 @@ public class Cell : MonoBehaviour
         }
 
         _isClicked = true;
-        await UniTask.Delay((int)_delaySecondForNextTap*100);
+        await UniTask.Delay((int)_delaySecondForNextTap*1000);
         _isClicked = false;
-            
-        
     }
 
     private void HandleDoubleTap()
     {
+        if(_isShowed)
+            return;
+
         if(_isSpecial)
-            Icon.text = "V";
+            {
+                Icon.text = "V";
+                GameManager.Instance.OnCorrectChoice(_correctScoreGet);
+                _isShowed = true;
+            }
         else
-            // code sau 
+        {
+            Icon.text = "X";
+            Icon.color = Color.red;
+            GameManager.Instance.OnWrongChoice();
+            _isShowed = true;
+        }
     }
 }

@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public class Board : MonoBehaviour
 {
-    [SerializeField] public int _columCount = 5;
-    [SerializeField] public int _rowCount = 5;
+    [SerializeField] private int _columCount = 5;
+    [SerializeField] private int _rowCount = 5;
     [SerializeField] GameObject _spawnRoot;
     [SerializeField] GameObject _cellCellPrefab;
     [SerializeField] bool isTesting = false;
