@@ -18,6 +18,9 @@ public class Cell : MonoBehaviour
     }
     public async UniTask OnSpecialTap()
     {
+        if(_isShowed)
+            return;
+
         if(Icon.text.Length>=1)
             Icon.text ="";
         else 
@@ -34,6 +37,10 @@ public class Cell : MonoBehaviour
         await UniTask.Delay((int)_delaySecondForNextTap*1000);
         _isClicked = false;
     }
+    public void TurnOnSpecial()
+    {
+        _isSpecial = true;
+    }
 
     private void HandleDoubleTap()
     {
@@ -47,11 +54,11 @@ public class Cell : MonoBehaviour
                 _isShowed = true;
             }
         else
-        {
+           {
             Icon.text = "X";
             Icon.color = Color.red;
             GameManager.Instance.OnWrongChoice();
             _isShowed = true;
-        }
+            }
     }
 }

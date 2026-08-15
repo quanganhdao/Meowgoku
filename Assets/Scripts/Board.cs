@@ -1,5 +1,8 @@
 using System;
-using NUnit.Framework;
+using System.Collections.Generic;
+using System.Linq;
+using Unity.VisualScripting;
+using UnityEditor.AnimatedValues;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -10,10 +13,12 @@ public class Board : MonoBehaviour
     [SerializeField] GameObject _spawnRoot;
     [SerializeField] GameObject _cellCellPrefab;
     [SerializeField] bool isTesting = false;
-
+    [SerializeField] List<int> _solution;
+    private int _solutionLeft;
 
     void Start()
     {
+        _solutionLeft = _solution.Count;
         GridSetUp();
         SpawnGrid();
     }
@@ -33,17 +38,27 @@ public class Board : MonoBehaviour
             return; 
 
         ClearBoard();
-        for(int i = 0 ; i < _columCount*_rowCount; i++) 
-            Instantiate(_cellCellPrefab,_spawnRoot.transform);
+        for(int i = 0 ; i < _columCount*_rowCount; i++)
+        {
+            GameObject d = Instantiate(_cellCellPrefab,_spawnRoot.transform);
+            Cell s = d.GetComponent<Cell>();
+            if(_solution.Contains(i+1))
+            {
+                _solution.Remove(_solution.IndexOf(i+1));
+                s.TurnOnSpecial();
+
+                if(_solution.Count <= 0)
+                    GameManager.Instance.OnWin();
+            }
+        } 
+            
     }
     
     private void ClearBoard()
     {
-        int count = _spawnRoot.transform.childCount;
-        while(count!=0)
+        foreach(Transform child in _spawnRoot.transform)
         {
-            Destroy(_spawnRoot.transform.GetChild(count).gameObject);
-            --count;
+            Destroy(child.gameObject);
         }
     }
     
