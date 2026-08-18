@@ -1,66 +1,44 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using Unity.VisualScripting;
-using UnityEditor.AnimatedValues;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class Board : MonoBehaviour
 {
-    [SerializeField] private int _columCount = 5;
-    [SerializeField] private int _rowCount = 5;
-    [SerializeField] GameObject _spawnRoot;
-    [SerializeField] GameObject _cellCellPrefab;
-    [SerializeField] bool isTesting = false;
-    [SerializeField] List<int> _solution;
-    private int _solutionLeft;
+    [SerializeField] private Transform _spawnRoot;
+    [SerializeField] private Cell _cellPrefab;
 
-    void Start()
+    public void Build(LevelData level)
     {
-        _solutionLeft = _solution.Count;
-        GridSetUp();
-        SpawnGrid();
-    }
-    private void GridSetUp()
-    {
-        GridLayoutGroup d = _spawnRoot.GetComponent<GridLayoutGroup>();
-        if(d==null)
+        if (level.solution == null || level.colors == null)
+        {
+            Debug.LogError($"{level.name}: press Create Grid on the LevelData asset first.", level);
             return;
+        }
 
-        d.constraint = GridLayoutGroup.Constraint.FixedColumnCount;
-        d.constraintCount = _columCount;
-    }
-    
-    private void SpawnGrid()
-    {
-        if(isTesting)
-            return; 
+        int size = level.solution.GetLength(0);
 
         ClearBoard();
-        for(int i = 0 ; i < _columCount*_rowCount; i++)
-        {
-            GameObject d = Instantiate(_cellCellPrefab,_spawnRoot.transform);
-            Cell s = d.GetComponent<Cell>();
-            if(_solution.Contains(i+1))
-            {
-                _solution.Remove(_solution.IndexOf(i+1));
-                s.TurnOnSpecial();
+        SetUpGrid(size);
 
-                if(_solution.Count <= 0)
-                    GameManager.Instance.OnWin();
-            }
-        } 
-            
-    }
-    
-    private void ClearBoard()
-    {
-        foreach(Transform child in _spawnRoot.transform)
+        for (int i = 0; i < size * size; i++)
         {
-            Destroy(child.gameObject);
+            int x = i % size;
+            int y = i / size;
+
+            Cell cell = Instantiate(_cellPrefab, _spawnRoot);
+            cell.Setup(level.colors[x, y], level.solution[x, y]);
         }
     }
-    
 
+    private void SetUpGrid(int columns)
+    {
+        GridLayoutGroup grid = _spawnRoot.GetComponent<GridLayoutGroup>();
+        grid.constraint = GridLayoutGroup.Constraint.FixedColumnCount;
+        grid.constraintCount = columns;
+    }
+
+    private void ClearBoard()
+    {
+        foreach (Transform child in _spawnRoot)
+            Destroy(child.gameObject);
+    }
 }

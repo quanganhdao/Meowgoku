@@ -1,29 +1,40 @@
+using System;
 using UnityEngine;
+using UnityEngine.UI;
 using Cysharp.Threading.Tasks;
 using TMPro;
-using Unity.Burst.Intrinsics;
 
 public class Cell : MonoBehaviour
 {
-    [SerializeField] private bool _isSpecial;
+    [SerializeField] private Image _background;
     [SerializeField] private TextMeshProUGUI Icon;
-    [SerializeField] private float _delaySecondForNextTap;
+    [SerializeField] private float _delaySecondForNextTap = 0.3f;
     [SerializeField] private int _correctScoreGet = 20;
+
+    private bool _isSpecial;
     private bool _isClicked = false;
     private bool _isShowed = false;
 
+    public void Setup(Color color, bool isSpecial)
+    {
+        _isSpecial = isSpecial;
+        color.a = 1f;
+        _background.color = color;
+    }
+
     public void HandleTap()
     {
-        OnSpecialTap();
+        OnSpecialTap().Forget();
     }
-    public async UniTask OnSpecialTap()
+
+    private async UniTaskVoid OnSpecialTap()
     {
         if(_isShowed)
             return;
 
         if(Icon.text.Length>=1)
             Icon.text ="";
-        else 
+        else
             Icon.text = "X";
 
         if(_isClicked)
@@ -34,12 +45,9 @@ public class Cell : MonoBehaviour
         }
 
         _isClicked = true;
-        await UniTask.Delay((int)_delaySecondForNextTap*1000);
+        await UniTask.Delay(TimeSpan.FromSeconds(_delaySecondForNextTap),
+                            cancellationToken: this.GetCancellationTokenOnDestroy());
         _isClicked = false;
-    }
-    public void TurnOnSpecial()
-    {
-        _isSpecial = true;
     }
 
     private void HandleDoubleTap()

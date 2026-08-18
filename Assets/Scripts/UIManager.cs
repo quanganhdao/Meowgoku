@@ -9,7 +9,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI _scoreText;
     [SerializeField] private TextMeshProUGUI _livesText;
 
-    void Start()
+    void Awake()
     {
         Instance = this;
     }
