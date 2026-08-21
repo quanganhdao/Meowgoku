@@ -54,8 +54,8 @@ public class GameManager : MonoBehaviour
     private static int CountSolution(LevelData level)
     {
         int count = 0;
-        foreach (bool isSolution in level.solution)
-            if (isSolution)
+        foreach (LevelData.CellInfo info in level.cell)
+            if (info.mark == LevelData.CellMark.Solution)
                 count++;
 
         return count;

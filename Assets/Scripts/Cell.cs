@@ -15,11 +15,18 @@ public class Cell : MonoBehaviour
     private bool _isClicked = false;
     private bool _isShowed = false;
 
-    public void Setup(Color color, bool isSpecial)
+    public void Setup(Color color, LevelData.CellMark mark)
     {
-        _isSpecial = isSpecial;
+        _isSpecial = mark != LevelData.CellMark.None;
+
         color.a = 1f;
         _background.color = color;
+
+        if (mark == LevelData.CellMark.Revealed)
+        {
+            Icon.text = "V";
+            _isShowed = true;
+        }
     }
 
     public void HandleTap()

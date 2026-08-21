@@ -283,7 +283,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24a33d5bf01b9954b86bbc8f533cb01e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Cell
-  _isSpecial: 0
+  _background: {fileID: 3351205770707140829}
   Icon: {fileID: 7242950539293542734}
   _delaySecondForNextTap: 1
   _correctScoreGet: 20
