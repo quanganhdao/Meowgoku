@@ -21,9 +21,9 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes:
-    - Name: colors
+    - Name: cell
       Entry: 7
-      Data: 0|UnityEngine.Color[,], UnityEngine.CoreModule
+      Data: 0|LevelData+CellInfo[,], Assembly-CSharp
     - Name: 
       Entry: 12
       Data: 16
@@ -32,289 +32,433 @@ MonoBehaviour:
       Data: 4|4
     - Name: 
       Entry: 7
+      Data: LevelData+CellInfo, Assembly-CSharp
+    - Name: mark
+      Entry: 3
+      Data: 1
+    - Name: color
+      Entry: 7
       Data: UnityEngine.Color, UnityEngine.CoreModule
     - Name: 
       Entry: 4
-      Data: 0.411813617
+      Data: 0.0196078438
     - Name: 
       Entry: 4
-      Data: 0.9811321
+      Data: 0.8980392
     - Name: 
       Entry: 4
-      Data: 0.171235323
+      Data: 0.0196078438
     - Name: 
       Entry: 4
-      Data: 0
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: 
       Entry: 8
       Data: 
     - Name: 
       Entry: 7
+      Data: LevelData+CellInfo, Assembly-CSharp
+    - Name: mark
+      Entry: 3
+      Data: 0
+    - Name: color
+      Entry: 7
       Data: UnityEngine.Color, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0.8862746
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: LevelData+CellInfo, Assembly-CSharp
+    - Name: mark
+      Entry: 3
+      Data: 0
+    - Name: color
+      Entry: 7
+      Data: UnityEngine.Color, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0.8862746
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: LevelData+CellInfo, Assembly-CSharp
+    - Name: mark
+      Entry: 3
+      Data: 0
+    - Name: color
+      Entry: 7
+      Data: UnityEngine.Color, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0.8862746
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: LevelData+CellInfo, Assembly-CSharp
+    - Name: mark
+      Entry: 3
+      Data: 0
+    - Name: color
+      Entry: 7
+      Data: UnityEngine.Color, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0.0196078438
+    - Name: 
+      Entry: 4
+      Data: 0.8980393
+    - Name: 
+      Entry: 4
+      Data: 0.0196078438
+    - Name: 
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: LevelData+CellInfo, Assembly-CSharp
+    - Name: mark
+      Entry: 3
+      Data: 0
+    - Name: color
+      Entry: 7
+      Data: UnityEngine.Color, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0.8862745
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: LevelData+CellInfo, Assembly-CSharp
+    - Name: mark
+      Entry: 3
+      Data: 0
+    - Name: color
+      Entry: 7
+      Data: UnityEngine.Color, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0.8862746
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: LevelData+CellInfo, Assembly-CSharp
+    - Name: mark
+      Entry: 3
+      Data: 1
+    - Name: color
+      Entry: 7
+      Data: UnityEngine.Color, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0.8862746
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: LevelData+CellInfo, Assembly-CSharp
+    - Name: mark
+      Entry: 3
+      Data: 0
+    - Name: color
+      Entry: 7
+      Data: UnityEngine.Color, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0.0196078438
+    - Name: 
+      Entry: 4
+      Data: 0.8980393
+    - Name: 
+      Entry: 4
+      Data: 0.0196078438
+    - Name: 
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: LevelData+CellInfo, Assembly-CSharp
+    - Name: mark
+      Entry: 3
+      Data: 2
+    - Name: color
+      Entry: 7
+      Data: UnityEngine.Color, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0.156862751
+    - Name: 
+      Entry: 4
+      Data: 0.156862751
     - Name: 
       Entry: 4
       Data: 1
     - Name: 
       Entry: 4
-      Data: 0.0980392247
+      Data: 1
     - Name: 
-      Entry: 4
-      Data: 0.8313726
-    - Name: 
-      Entry: 4
-      Data: 0
+      Entry: 8
+      Data: 
     - Name: 
       Entry: 8
       Data: 
     - Name: 
       Entry: 7
+      Data: LevelData+CellInfo, Assembly-CSharp
+    - Name: mark
+      Entry: 3
+      Data: 0
+    - Name: color
+      Entry: 7
       Data: UnityEngine.Color, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0.8862746
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: LevelData+CellInfo, Assembly-CSharp
+    - Name: mark
+      Entry: 3
+      Data: 0
+    - Name: color
+      Entry: 7
+      Data: UnityEngine.Color, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0.8862746
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: LevelData+CellInfo, Assembly-CSharp
+    - Name: mark
+      Entry: 3
+      Data: 0
+    - Name: color
+      Entry: 7
+      Data: UnityEngine.Color, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0.156862751
+    - Name: 
+      Entry: 4
+      Data: 0.156862751
     - Name: 
       Entry: 4
       Data: 1
     - Name: 
       Entry: 4
-      Data: 0.0980392247
+      Data: 1
     - Name: 
-      Entry: 4
-      Data: 0.8313726
-    - Name: 
-      Entry: 4
-      Data: 0
+      Entry: 8
+      Data: 
     - Name: 
       Entry: 8
       Data: 
     - Name: 
       Entry: 7
+      Data: LevelData+CellInfo, Assembly-CSharp
+    - Name: mark
+      Entry: 3
+      Data: 0
+    - Name: color
+      Entry: 7
       Data: UnityEngine.Color, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0.156862751
+    - Name: 
+      Entry: 4
+      Data: 0.156862751
     - Name: 
       Entry: 4
       Data: 1
     - Name: 
       Entry: 4
-      Data: 0.0980392247
+      Data: 1
     - Name: 
-      Entry: 4
-      Data: 0.8313726
-    - Name: 
-      Entry: 4
-      Data: 0
+      Entry: 8
+      Data: 
     - Name: 
       Entry: 8
       Data: 
     - Name: 
       Entry: 7
-      Data: UnityEngine.Color, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
-      Data: 0.411764741
-    - Name: 
-      Entry: 4
-      Data: 0.9803922
-    - Name: 
-      Entry: 4
-      Data: 0.172549024
-    - Name: 
-      Entry: 4
+      Data: LevelData+CellInfo, Assembly-CSharp
+    - Name: mark
+      Entry: 3
       Data: 0
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
+    - Name: color
       Entry: 7
       Data: UnityEngine.Color, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0.156862751
+    - Name: 
+      Entry: 4
+      Data: 0.156862751
     - Name: 
       Entry: 4
       Data: 1
     - Name: 
       Entry: 4
-      Data: 0.0980392247
+      Data: 1
     - Name: 
-      Entry: 4
-      Data: 0.8313726
-    - Name: 
-      Entry: 4
-      Data: 0
+      Entry: 8
+      Data: 
     - Name: 
       Entry: 8
       Data: 
     - Name: 
       Entry: 7
+      Data: LevelData+CellInfo, Assembly-CSharp
+    - Name: mark
+      Entry: 3
+      Data: 0
+    - Name: color
+      Entry: 7
       Data: UnityEngine.Color, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0.156862751
+    - Name: 
+      Entry: 4
+      Data: 0.156862751
     - Name: 
       Entry: 4
       Data: 1
     - Name: 
       Entry: 4
-      Data: 0.0980392247
-    - Name: 
-      Entry: 4
-      Data: 0.8313726
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: UnityEngine.Color, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
       Data: 1
     - Name: 
-      Entry: 4
-      Data: 0.0980392247
-    - Name: 
-      Entry: 4
-      Data: 0.8313726
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
       Entry: 8
       Data: 
-    - Name: 
-      Entry: 7
-      Data: UnityEngine.Color, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
-      Data: 0.411764741
-    - Name: 
-      Entry: 4
-      Data: 0.9803922
-    - Name: 
-      Entry: 4
-      Data: 0.172549024
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: UnityEngine.Color, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
-      Data: 1
-    - Name: 
-      Entry: 4
-      Data: 0.9843138
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: UnityEngine.Color, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
-      Data: 1
-    - Name: 
-      Entry: 4
-      Data: 0.0990566
-    - Name: 
-      Entry: 4
-      Data: 0.831244946
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: UnityEngine.Color, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
-      Data: 1
-    - Name: 
-      Entry: 4
-      Data: 0.0980392247
-    - Name: 
-      Entry: 4
-      Data: 0.8313726
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: UnityEngine.Color, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
-      Data: 1
-    - Name: 
-      Entry: 4
-      Data: 0.9832283
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: UnityEngine.Color, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
-      Data: 1
-    - Name: 
-      Entry: 4
-      Data: 0.9843138
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: UnityEngine.Color, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
-      Data: 1
-    - Name: 
-      Entry: 4
-      Data: 0.9843138
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: UnityEngine.Color, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
-      Data: 1
-    - Name: 
-      Entry: 4
-      Data: 0.9843138
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -324,67 +468,4 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-    - Name: solution
-      Entry: 7
-      Data: 1|System.Boolean[,], mscorlib
-    - Name: 
-      Entry: 12
-      Data: 16
-    - Name: ranks
-      Entry: 1
-      Data: 4|4
-    - Name: 
-      Entry: 5
-      Data: true
-    - Name: 
-      Entry: 5
-      Data: false
-    - Name: 
-      Entry: 5
-      Data: false
-    - Name: 
-      Entry: 5
-      Data: false
-    - Name: 
-      Entry: 5
-      Data: false
-    - Name: 
-      Entry: 5
-      Data: false
-    - Name: 
-      Entry: 5
-      Data: false
-    - Name: 
-      Entry: 5
-      Data: true
-    - Name: 
-      Entry: 5
-      Data: false
-    - Name: 
-      Entry: 5
-      Data: true
-    - Name: 
-      Entry: 5
-      Data: false
-    - Name: 
-      Entry: 5
-      Data: false
-    - Name: 
-      Entry: 5
-      Data: false
-    - Name: 
-      Entry: 5
-      Data: false
-    - Name: 
-      Entry: 5
-      Data: false
-    - Name: 
-      Entry: 5
-      Data: false
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-  size: 4
+  _size: 4

@@ -1,0 +1,10 @@
+Red 226 0 0
+Blue 40 40 255
+Green 5 229 5
+Cyan 0 255 255
+Yellow 255 235 4
+Orange 255 165 0
+Magenta 241 3 241
+Brown 160 82 45
+Purple 153 50 204
+Dark Green 0 100 0
