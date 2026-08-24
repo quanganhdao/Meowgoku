@@ -1,3 +1,4 @@
+using System;
 using TMPro;
 using UnityEngine;
 
@@ -10,6 +11,14 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject _gameResultCanvas;
     [SerializeField] private TextMeshProUGUI _resultText;
 
+    [Header("Boost System")]
+    [SerializeField] private int _findCount = 3;
+    [SerializeField] TextMeshProUGUI _findTextCount;
+    [SerializeField] private int _markCount = 3;
+    [SerializeField] TextMeshProUGUI _markTextCount;
+
+    private FindPO FindBoost;
+    private MarkPO MarkBoost;
     private int _lives = 3;
     private int _score = 0;
     private int _currentlives;
@@ -23,9 +32,10 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+        FindBoost = new FindPO(_findCount);
+        MarkBoost = new MarkPO(_markCount);
         StartRound();
     }
-
     public void StartRound()
     {
         LevelData level = _levels[_currentLevel];
@@ -40,6 +50,25 @@ public class GameManager : MonoBehaviour
 
         UIManager.Instance.LivesUpdate(_currentlives, _lives);
         UIManager.Instance.ScoreUpdate(_score);
+        FindTextSetUp();
+    }
+    void FindTextSetUp()
+    {
+         _findTextCount.text = $" {FindBoost.Charge} / {_findCount} ";
+    }
+    void MarkTextSetUp()
+    {
+        _markTextCount.text = $" {MarkBoost.Charge} / {_markCount}";
+    }
+    public void FindBtnClicked()
+    {
+        FindBoost.Use(_board,this);
+        FindTextSetUp();
+    }
+    public void MarkBtnClicked()
+    {
+        MarkBoost.Use(_board,this);
+        MarkTextSetUp();
     }
 
     public void NextLevel()

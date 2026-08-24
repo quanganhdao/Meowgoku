@@ -14,9 +14,6 @@ public class LevelData : SerializedScriptableObject
 
     public int _size = 3;
 
-    // Left click (upper area) = cycle mark : None -> Solution -> Revealed
-    // Right click             = cycle colour through Palette (fast)
-    // Colour strip at bottom  = free colour picker
     [TableMatrix(SquareCells = true, DrawElementMethod = "DrawElement")]
     public CellInfo[,] cell;
 

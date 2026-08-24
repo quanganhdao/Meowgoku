@@ -14,6 +14,10 @@ public class Cell : MonoBehaviour
     private bool _isSpecial;
     private bool _isClicked = false;
     private bool _isShowed = false;
+    public bool IsShowed => _isShowed;
+    public bool IsSpecial => _isSpecial;
+    public int CorrectScore => _correctScoreGet;
+    public TextMeshProUGUI GetText => Icon;
 
     public void Setup(Color color, LevelData.CellMark mark)
     {
@@ -42,7 +46,7 @@ public class Cell : MonoBehaviour
         if(Icon.text.Length>=1)
             Icon.text ="";
         else
-            Icon.text = "X";
+            MarkWrong();
 
         if(_isClicked)
         {
@@ -56,6 +60,17 @@ public class Cell : MonoBehaviour
                             cancellationToken: this.GetCancellationTokenOnDestroy());
         _isClicked = false;
     }
+    public void Reveal()
+    {
+        if(_isShowed) return;
+
+        Icon.text = "V";
+        _isShowed = true;
+    }
+    public void MarkWrong()
+    {
+        Icon.text = "X";
+    }
 
     private void HandleDoubleTap()
     {
@@ -64,13 +79,12 @@ public class Cell : MonoBehaviour
 
         if(_isSpecial)
             {
-                Icon.text = "V";
+                Reveal();
                 GameManager.Instance.OnCorrectChoice(_correctScoreGet);
-                _isShowed = true;
             }
         else
            {
-            Icon.text = "X";
+            MarkWrong();
             Icon.color = Color.red;
             GameManager.Instance.OnWrongChoice();
             _isShowed = true;

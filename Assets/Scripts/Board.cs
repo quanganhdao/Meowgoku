@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -5,7 +6,9 @@ public class Board : MonoBehaviour
 {
     [SerializeField] private Transform _spawnRoot;
     [SerializeField] private Cell _cellPrefab;
-
+    private Cell [] _cells;
+    public IReadOnlyList<Cell> Cells => _cells;
+    public int size {get ; private set;}
     public void Build(LevelData level)
     {
         if (level.cell == null)
@@ -14,16 +17,18 @@ public class Board : MonoBehaviour
             return;
         }
 
-        int size = level.cell.GetLength(0);
+        size = level.cell.GetLength(0);
 
         ClearBoard();
         SetUpGrid(size);
+        _cells = new Cell[size*size];
 
         for (int i = 0; i < size * size; i++)
         {
             LevelData.CellInfo info = level.cell[i % size, i / size];
 
             Cell cell = Instantiate(_cellPrefab, _spawnRoot);
+            _cells[i] = cell;
             cell.Setup(info.color, info.mark);
         }
     }
