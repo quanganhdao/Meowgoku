@@ -6,6 +6,8 @@ public class Board : MonoBehaviour
 {
     [SerializeField] private Transform _spawnRoot;
     [SerializeField] private Cell _cellPrefab;
+    [Tooltip("Trễ giữa hai đường chéo liên tiếp khi bàn cờ hiện ra")]
+    [SerializeField] private float _appearStagger = 0.035f;
     private Cell [] _cells;
     public IReadOnlyList<Cell> Cells => _cells;
     public int size {get ; private set;}
@@ -25,11 +27,14 @@ public class Board : MonoBehaviour
 
         for (int i = 0; i < size * size; i++)
         {
-            LevelData.CellInfo info = level.cell[i % size, i / size];
+            int x = i % size;
+            int y = i / size;
+            LevelData.CellInfo info = level.cell[x, y];
 
             Cell cell = Instantiate(_cellPrefab, _spawnRoot);
             _cells[i] = cell;
             cell.Setup(info.color, info.mark);
+            cell.Appear((x + y) * _appearStagger);
         }
     }
 

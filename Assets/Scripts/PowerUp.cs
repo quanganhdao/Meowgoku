@@ -1,5 +1,3 @@
-using System;
-
 public abstract class PowerUp
 {
     public int Charge {get ; protected set;}
