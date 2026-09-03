@@ -1,10 +1,10 @@
-Red 226 0 0
-Blue 40 40 255
-Green 5 229 5
-Cyan 0 255 255
-Yellow 255 235 4
-Orange 255 165 0
-Magenta 241 3 241
-Brown 160 82 45
-Purple 153 50 204
-Dark Green 0 100 0
+Red 227 83 54
+Blue 143 217 251
+Green 136 231 136
+Turquoise 64 224 208
+Yellow 229, 195, 84
+Orange 224, 140, 74
+Soft Amethyst 162 115 184
+Bark Brown 140 90 66
+Coral Pink 217 115 138
+Moss Green 139 158 73
