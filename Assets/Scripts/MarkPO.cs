@@ -21,8 +21,7 @@ public class MarkPO : PowerUp
 
             if (targets.Count > 0)
             {
-                foreach (int t in targets)
-                    board.Cells[t].MarkWrong();
+                board.Cells[Random.Range(0,targets.Count)].MarkWrong();
                 return true;
             }
 
