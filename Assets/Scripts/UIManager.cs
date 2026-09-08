@@ -16,9 +16,9 @@ public class UIManager : MonoBehaviour
     {
         Instance = this;
     }
-    public void ScoreUpdate(int _score)
+    public void SolutionUpdate(string t)
     {
-        _scoreText.text = $"Score:{_score}";
+        _scoreText.text = t;
 
         _scoreText.rectTransform.DOKill(true);
         _scoreText.rectTransform.DOPunchScale(Vector3.one * 0.2f, 0.25f, 8, 1f)
@@ -28,9 +28,8 @@ public class UIManager : MonoBehaviour
 
     public void LivesUpdate(int lives , int maxLives)
     {
-        _livesText.text = $"Lives:{lives} / {maxLives}";
+        _livesText.text = $"{lives} / {maxLives}";
 
-        // chỉ rung khi mất mạng, không rung lúc StartRound reset
         if (_lastLives >= 0 && lives < _lastLives)
         {
             _livesText.rectTransform.DOKill(true);
