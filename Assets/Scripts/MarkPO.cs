@@ -40,7 +40,7 @@ public class MarkPO : PowerUp
         {
             if( i / board.size == hor || i % board.size == ver || (Mathf.Abs(i / board.size - hor) == 1 && Mathf.Abs(i % board.size - ver) == 1))
             {
-                if(!board.Cells[i].IsShowed && board.Cells[i].GetText.text.Length == 0)
+                if(!board.Cells[i].IsShowed && !board.Cells[i].IsSpecial)
                     _collectedTarget.Add(i);
             }
         }

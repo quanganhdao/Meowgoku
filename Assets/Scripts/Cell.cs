@@ -2,6 +2,7 @@ using System;
 using UnityEngine;
 using UnityEngine.UI;
 using Cysharp.Threading.Tasks;
+using DG.Tweening;
 using TMPro;
 
 public class Cell : MonoBehaviour
@@ -46,7 +47,7 @@ public class Cell : MonoBehaviour
         if(Icon.text.Length>=1)
             Icon.text ="";
         else
-            MarkWrong();
+            Icon.text = "X";
 
         if(_isClicked)
         {
@@ -66,10 +67,31 @@ public class Cell : MonoBehaviour
 
         Icon.text = "V";
         _isShowed = true;
+        Punch();
     }
     public void MarkWrong()
     {
+        if(_isShowed) return;
+
         Icon.text = "X";
+        _isShowed = true;
+        Punch();
+    }
+
+    public void Appear(float delay)
+    {
+        transform.localScale = Vector3.zero;
+        transform.DOScale(1f, 0.2f)
+                 .SetDelay(delay)
+                 .SetEase(Ease.OutBack)
+                 .SetLink(gameObject);
+    }
+
+    private void Punch()
+    {
+        transform.DOPunchScale(Vector3.one * 0.2f, 0.25f, 8, 1f)
+                 .SetUpdate(true)
+                 .SetLink(gameObject);
     }
 
     private void HandleDoubleTap()
@@ -87,7 +109,6 @@ public class Cell : MonoBehaviour
             MarkWrong();
             Icon.color = Color.red;
             GameManager.Instance.OnWrongChoice();
-            _isShowed = true;
             }
     }
 }

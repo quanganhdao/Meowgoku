@@ -1,4 +1,4 @@
-using System;
+using DG.Tweening;
 using TMPro;
 using UnityEngine;
 
@@ -51,14 +51,25 @@ public class GameManager : MonoBehaviour
         UIManager.Instance.LivesUpdate(_currentlives, _lives);
         UIManager.Instance.ScoreUpdate(_score);
         FindTextSetUp();
+        MarkTextSetUp();
     }
     void FindTextSetUp()
     {
          _findTextCount.text = $" {FindBoost.Charge} / {_findCount} ";
+         Punch(_findTextCount);
     }
     void MarkTextSetUp()
     {
         _markTextCount.text = $" {MarkBoost.Charge} / {_markCount}";
+        Punch(_markTextCount);
+    }
+
+    private static void Punch(TextMeshProUGUI text)
+    {
+        text.rectTransform.DOKill(true);
+        text.rectTransform.DOPunchScale(Vector3.one * 0.25f, 0.25f, 8, 1f)
+                          .SetUpdate(true)
+                          .SetLink(text.gameObject);
     }
     public void FindBtnClicked()
     {
@@ -92,17 +103,40 @@ public class GameManager : MonoBehaviour
 
     public void OnResult(bool isWin)
     {
-        if(_gameResultCanvas != null)
-            _gameResultCanvas.SetActive(true);
-        else
-            Debug.LogWarning("You are not assign _gameResult canvas yet ! ");
-
         if(_resultText!=null)
             _resultText.text = isWin ? " You Win !" : "You Loose !";
         else
             Debug.LogWarning("You are not assign the result text;");
 
+        if(_gameResultCanvas != null)
+            ShowResultCanvas();
+        else
+            Debug.LogWarning("You are not assign _gameResult canvas yet ! ");
+
         Time.timeScale = 0;
+    }
+
+    private void ShowResultCanvas()
+    {
+        if (!_gameResultCanvas.TryGetComponent(out CanvasGroup group))
+            group = _gameResultCanvas.AddComponent<CanvasGroup>();
+
+        Transform panel = _gameResultCanvas.transform;
+        panel.DOKill();
+        group.DOKill();
+
+        _gameResultCanvas.SetActive(true);
+        panel.localScale = Vector3.one * 0.85f;
+        group.alpha = 0f;
+
+        panel.DOScale(1f, 0.25f)
+             .SetEase(Ease.OutBack)
+             .SetUpdate(true)
+             .SetLink(_gameResultCanvas);
+
+        group.DOFade(1f, 0.15f)
+             .SetUpdate(true)
+             .SetLink(_gameResultCanvas);
     }
 
     public void OnWrongChoice()
