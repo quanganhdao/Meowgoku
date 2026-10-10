@@ -102,7 +102,7 @@ public class Cell : MonoBehaviour
         if(_isSpecial)
             {
                 Reveal();
-                GameManager.Instance.OnCorrectChoice(_correctScoreGet);
+                GameManager.Instance.OnCorrectChoice();
             }
         else
            {

@@ -9,7 +9,7 @@ public class FindPO : PowerUp
             if(cell.IsSpecial && !cell.IsShowed)
                 {
                     cell.Reveal();
-                    gamemanager.OnCorrectChoice(cell.CorrectScore);
+                    gamemanager.OnCorrectChoice();
                     return true;
                 }
         }

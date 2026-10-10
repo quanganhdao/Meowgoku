@@ -20,9 +20,9 @@ public class GameManager : MonoBehaviour
     private FindPO FindBoost;
     private MarkPO MarkBoost;
     private int _lives = 3;
-    private int _score = 0;
     private int _currentlives;
     private int _solutionLeft;
+    private int _totalSol;
     private int _currentLevel = 0;
 
     void Awake()
@@ -40,16 +40,17 @@ public class GameManager : MonoBehaviour
     {
         LevelData level = _levels[_currentLevel];
 
-        _score = 0;
         _currentlives = _lives;
         _solutionLeft = CountSolution(level);
+        _totalSol = _solutionLeft;
         Time.timeScale = 1;
 
         _gameResultCanvas.SetActive(false);
         _board.Build(level);
 
         UIManager.Instance.LivesUpdate(_currentlives, _lives);
-        UIManager.Instance.ScoreUpdate(_score);
+        UIManager.Instance.SolutionUpdate($"{_totalSol - _solutionLeft} / {_totalSol}");
+        Debug.LogWarning(_totalSol - _solutionLeft);
         FindTextSetUp();
         MarkTextSetUp();
     }
@@ -146,12 +147,11 @@ public class GameManager : MonoBehaviour
             OnResult(false);
     }
 
-    public void OnCorrectChoice(int scoreGet)
+    public void OnCorrectChoice()
     {
         _solutionLeft--;
-        _score += scoreGet;
 
-        UIManager.Instance.ScoreUpdate(_score);
+        UIManager.Instance.SolutionUpdate($"{_totalSol - _solutionLeft} / {_totalSol}");
         if(_solutionLeft <= 0)
             OnResult(true);
     }
