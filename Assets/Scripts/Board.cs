@@ -43,6 +43,9 @@ public class Board : MonoBehaviour
         GridLayoutGroup grid = _spawnRoot.GetComponent<GridLayoutGroup>();
         grid.constraint = GridLayoutGroup.Constraint.FixedColumnCount;
         grid.constraintCount = columns;
+
+        if (_spawnRoot.TryGetComponent(out BoardFitter fitter))
+            fitter.Fit();
     }
 
     private void ClearBoard()
