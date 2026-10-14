@@ -1,0 +1,590 @@
+fileFormatVersion: 2
+guid: 69bb8b261df1aa84ebea0ff16ae15f88
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 3
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: win_hole_fix_0
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 660
+        width: 264
+        height: 214
+      alignment: 9
+      pivot: {x: 0.4764, y: 0.5783}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8aac8b2735067e747ace20f6e667715e
+      internalID: 2121853366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: win_hole_fix_1
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 661
+        width: 286
+        height: 218
+      alignment: 9
+      pivot: {x: 0.481, y: 0.5631}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f517c4c1eb6a6f408af99037f6dcdd6
+      internalID: 1058322874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: win_hole_fix_2
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 660
+        width: 294
+        height: 221
+      alignment: 9
+      pivot: {x: 0.5084, y: 0.5554}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ceaa9d86f625fa4881e6abbe2e01f7b
+      internalID: 1990413567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: win_hole_fix_3
+      rect:
+        serializedVersion: 2
+        x: 1141
+        y: 661
+        width: 229
+        height: 222
+      alignment: 9
+      pivot: {x: 0.4654, y: 0.5439}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b5a728cd9d2fa242b4bcae6a7aa97ae
+      internalID: -1573837691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: win_hole_fix_4
+      rect:
+        serializedVersion: 2
+        x: 1499
+        y: 667
+        width: 261
+        height: 220
+      alignment: 9
+      pivot: {x: 0.4769, y: 0.5261}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdbaa3124bfaef94c95609cc4208ba33
+      internalID: -708071585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: win_hole_fix_5
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 452
+        width: 268
+        height: 199
+      alignment: 9
+      pivot: {x: 0.4699, y: 0.5616}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcc9ba5011f3ed34aaba2a0a6b044359
+      internalID: 1766714186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: win_hole_fix_6
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 446
+        width: 271
+        height: 210
+      alignment: 9
+      pivot: {x: 0.4693, y: 0.5607}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2836652a50fd2e41987b950a056674d
+      internalID: 651991075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: win_hole_fix_7
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 449
+        width: 304
+        height: 206
+      alignment: 9
+      pivot: {x: 0.5267, y: 0.5522}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b420df4590c465469317ee186a992aa
+      internalID: -634147464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: win_hole_fix_8
+      rect:
+        serializedVersion: 2
+        x: 1132
+        y: 429
+        width: 246
+        height: 233
+      alignment: 9
+      pivot: {x: 0.4904, y: 0.574}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1e338c46d874df48b588a2a5d25399e
+      internalID: -1676805225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: win_hole_fix_9
+      rect:
+        serializedVersion: 2
+        x: 1496
+        y: 443
+        width: 271
+        height: 221
+      alignment: 9
+      pivot: {x: 0.509, y: 0.5373}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6963041bd8a33c64bbb310083d5d9a3c
+      internalID: 97719183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: win_hole_fix_10
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 226
+        width: 270
+        height: 231
+      alignment: 9
+      pivot: {x: 0.4858, y: 0.4838}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f46700642e7310342a0f5314eda305be
+      internalID: -539579171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: win_hole_fix_11
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 218
+        width: 299
+        height: 247
+      alignment: 9
+      pivot: {x: 0.4997, y: 0.4484}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcd49d2da0a5bc4419f21d7fed032da5
+      internalID: -1494108726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: win_hole_fix_12
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 222
+        width: 323
+        height: 241
+      alignment: 9
+      pivot: {x: 0.5302, y: 0.4388}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff89d27fc390dc145b25869b3010af3c
+      internalID: -1983452995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: win_hole_fix_13
+      rect:
+        serializedVersion: 2
+        x: 1107
+        y: 221
+        width: 293
+        height: 228
+      alignment: 9
+      pivot: {x: 0.5021, y: 0.4638}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b9783b69d064814ca77ae4ce5eef855
+      internalID: -30702349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: win_hole_fix_14
+      rect:
+        serializedVersion: 2
+        x: 1469
+        y: 214
+        width: 305
+        height: 249
+      alignment: 9
+      pivot: {x: 0.5528, y: 0.4568}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b346479629d2a734b843099d3276e1f8
+      internalID: -1694614727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: win_hole_fix_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 11
+        width: 290
+        height: 221
+      alignment: 9
+      pivot: {x: 0.4744, y: 0.4242}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ceddf6e5d12a75840bc5d6000db7fdb1
+      internalID: -1880221719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: win_hole_fix_16
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 8
+        width: 348
+        height: 224
+      alignment: 9
+      pivot: {x: 0.5112, y: 0.4364}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5326351a46b5b4d4991794c4f483d021
+      internalID: 1979579111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: win_hole_fix_17
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 0
+        width: 312
+        height: 237
+      alignment: 9
+      pivot: {x: 0.489, y: 0.442}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8b6381f65dd40944963716b253b304f
+      internalID: 1019276738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: win_hole_fix_18
+      rect:
+        serializedVersion: 2
+        x: 1097
+        y: 4
+        width: 327
+        height: 230
+      alignment: 9
+      pivot: {x: 0.4865, y: 0.438}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2c0a9dfcb2ce924290db3d3ce277e09
+      internalID: -63194463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: win_hole_fix_19
+      rect:
+        serializedVersion: 2
+        x: 1460
+        y: 0
+        width: 314
+        height: 226
+      alignment: 9
+      pivot: {x: 0.5643, y: 0.4546}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b87d5cdba038594ea8847f7acca249d
+      internalID: 2115576173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 0c0b4a2bf27a8a34fa22f2e13a36946b
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      win_hole_fix_0: 2121853366
+      win_hole_fix_1: 1058322874
+      win_hole_fix_10: -539579171
+      win_hole_fix_11: -1494108726
+      win_hole_fix_12: -1983452995
+      win_hole_fix_13: -30702349
+      win_hole_fix_14: -1694614727
+      win_hole_fix_15: -1880221719
+      win_hole_fix_16: 1979579111
+      win_hole_fix_17: 1019276738
+      win_hole_fix_18: -63194463
+      win_hole_fix_19: 2115576173
+      win_hole_fix_2: 1990413567
+      win_hole_fix_3: -1573837691
+      win_hole_fix_4: -708071585
+      win_hole_fix_5: 1766714186
+      win_hole_fix_6: 651991075
+      win_hole_fix_7: -634147464
+      win_hole_fix_8: -1676805225
+      win_hole_fix_9: 97719183
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

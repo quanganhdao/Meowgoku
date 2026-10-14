@@ -1,0 +1,590 @@
+fileFormatVersion: 2
+guid: 05c4ac1a95601ee4491d02796f373df6
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 3
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: lose_hole_fix_0
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 618
+        width: 305
+        height: 269
+      alignment: 9
+      pivot: {x: 0.4856, y: 0.4844}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15d8005184367b348a50e5484191b785
+      internalID: 868442417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lose_hole_fix_1
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 628
+        width: 267
+        height: 259
+      alignment: 9
+      pivot: {x: 0.4915, y: 0.4722}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ea2ad6d08b5da74e84c84ca8d2ead8b
+      internalID: 1437333710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lose_hole_fix_2
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 629
+        width: 325
+        height: 258
+      alignment: 9
+      pivot: {x: 0.5062, y: 0.4663}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d26e5395e42a7634e9b1ca683be1b6a9
+      internalID: -1314800590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lose_hole_fix_3
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 626
+        width: 265
+        height: 259
+      alignment: 9
+      pivot: {x: 0.4792, y: 0.4683}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 519246dd0302a934c9e8cf79e661eff6
+      internalID: 348645779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lose_hole_fix_4
+      rect:
+        serializedVersion: 2
+        x: 1441
+        y: 627
+        width: 327
+        height: 259
+      alignment: 9
+      pivot: {x: 0.4651, y: 0.4568}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f2329c641363e6469ce5a538d37519d
+      internalID: 1233046972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lose_hole_fix_5
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 392
+        width: 350
+        height: 238
+      alignment: 9
+      pivot: {x: 0.4662, y: 0.5559}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a3f5b43715ab1744895d5c449758e4d
+      internalID: 743459769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lose_hole_fix_6
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 396
+        width: 308
+        height: 243
+      alignment: 9
+      pivot: {x: 0.4972, y: 0.528}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95199a9bf11804347b6c59172f80b93d
+      internalID: 754858963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lose_hole_fix_7
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 406
+        width: 357
+        height: 228
+      alignment: 9
+      pivot: {x: 0.5044, y: 0.5189}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 180311842426c1943978766a90596cb9
+      internalID: -712756519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lose_hole_fix_8
+      rect:
+        serializedVersion: 2
+        x: 1082
+        y: 401
+        width: 316
+        height: 237
+      alignment: 9
+      pivot: {x: 0.5211, y: 0.5034}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff251cc1b69d7344e8f2d7c81c7f4d07
+      internalID: -211441665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lose_hole_fix_9
+      rect:
+        serializedVersion: 2
+        x: 1417
+        y: 400
+        width: 357
+        height: 237
+      alignment: 9
+      pivot: {x: 0.4985, y: 0.4907}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8986c798d18c1fe40a257c2a9825df18
+      internalID: 1032892996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lose_hole_fix_10
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 194
+        width: 349
+        height: 208
+      alignment: 9
+      pivot: {x: 0.5143, y: 0.5063}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 274216e7f6483674ba633f347b0d9348
+      internalID: 1118369653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lose_hole_fix_11
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 189
+        width: 318
+        height: 215
+      alignment: 9
+      pivot: {x: 0.5504, y: 0.5084}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 645b5627c60a51248a55ea02577fd127
+      internalID: -1414723361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lose_hole_fix_12
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 199
+        width: 356
+        height: 198
+      alignment: 9
+      pivot: {x: 0.5359, y: 0.4965}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96fa4924e22c20f4784f392d07067482
+      internalID: 2099478824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lose_hole_fix_13
+      rect:
+        serializedVersion: 2
+        x: 1071
+        y: 198
+        width: 339
+        height: 204
+      alignment: 9
+      pivot: {x: 0.4919, y: 0.4819}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34ba851be021e7d44bba07fc763d74cb
+      internalID: -312522358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lose_hole_fix_14
+      rect:
+        serializedVersion: 2
+        x: 1407
+        y: 203
+        width: 367
+        height: 214
+      alignment: 9
+      pivot: {x: 0.506, y: 0.436}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fd4e907e353da2459519de4fb729c04
+      internalID: -1449193439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lose_hole_fix_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2
+        width: 355
+        height: 201
+      alignment: 9
+      pivot: {x: 0.4616, y: 0.5338}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f09d37e43bc5f5d408a6068345fa5b10
+      internalID: -940803676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lose_hole_fix_16
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 6
+        width: 349
+        height: 190
+      alignment: 9
+      pivot: {x: 0.5167, y: 0.5279}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29c7f01ee308fc04bafb1ad4d3c6405b
+      internalID: 1270333854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lose_hole_fix_17
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 2
+        width: 366
+        height: 209
+      alignment: 9
+      pivot: {x: 0.5276, y: 0.5038}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1044f2548b4489a4d9a17b943b938b76
+      internalID: 1690821135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lose_hole_fix_18
+      rect:
+        serializedVersion: 2
+        x: 1070
+        y: 3
+        width: 356
+        height: 192
+      alignment: 9
+      pivot: {x: 0.4913, y: 0.5536}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 996800524d0288449ad34f41ab59d503
+      internalID: -383690658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lose_hole_fix_19
+      rect:
+        serializedVersion: 2
+        x: 1435
+        y: 0
+        width: 339
+        height: 202
+      alignment: 9
+      pivot: {x: 0.4827, y: 0.5411}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffaa7f2080dcbf9429052ae1ffa07fa0
+      internalID: -1102761674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 4d16017c1650a294da955e0e4a586a47
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      lose_hole_fix_0: 868442417
+      lose_hole_fix_1: 1437333710
+      lose_hole_fix_10: 1118369653
+      lose_hole_fix_11: -1414723361
+      lose_hole_fix_12: 2099478824
+      lose_hole_fix_13: -312522358
+      lose_hole_fix_14: -1449193439
+      lose_hole_fix_15: -940803676
+      lose_hole_fix_16: 1270333854
+      lose_hole_fix_17: 1690821135
+      lose_hole_fix_18: -383690658
+      lose_hole_fix_19: -1102761674
+      lose_hole_fix_2: -1314800590
+      lose_hole_fix_3: 348645779
+      lose_hole_fix_4: 1233046972
+      lose_hole_fix_5: 743459769
+      lose_hole_fix_6: 754858963
+      lose_hole_fix_7: -712756519
+      lose_hole_fix_8: -211441665
+      lose_hole_fix_9: 1032892996
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
