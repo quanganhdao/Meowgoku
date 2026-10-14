@@ -143,19 +143,19 @@ MonoBehaviour:
       Data: LevelData+CellInfo, Assembly-CSharp
     - Name: mark
       Entry: 3
-      Data: 0
+      Data: 2
     - Name: color
       Entry: 7
       Data: UnityEngine.Color, UnityEngine.CoreModule
     - Name: 
       Entry: 4
-      Data: 0.56078434
+      Data: 0.29169634
     - Name: 
       Entry: 4
-      Data: 0.8509804
+      Data: 0.3098016
     - Name: 
       Entry: 4
-      Data: 0.9843137
+      Data: 0.6509434
     - Name: 
       Entry: 4
       Data: 1
