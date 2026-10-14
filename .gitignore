@@ -73,3 +73,13 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+
+# Third-party GUI packs (local only)
+/[Aa]ssets/GUI_Packs/
+/[Aa]ssets/GUI_Packs.meta
+
+# Build outputs (Android il2cpp / Burst) and Addressables temp
+/*_BackUpThisFolder_ButDontShipItWithYourGame/
+/*_BurstDebugInformation_DoNotShip/
+/[Aa]ssets/Addressables_Temp/
+/[Aa]ssets/Addressables_Temp.meta
